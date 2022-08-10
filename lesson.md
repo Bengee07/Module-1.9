@@ -18,10 +18,15 @@ Insert Instructions
 
 ## Part 2 - Types of servers
 
+Though several technical specifications distinguish servers, generally, these high-powered machines can be broken down by functionality or their dedicated role(s) for an organization and by form factor.
+
 
 ### By Server Functionality
 
-Here are many types of servers that all perform different functions. Many networks contain one or more of the common server types:
+Different types of servers play one or multiple jobs, from serving email and multimedia content to protecting internal networks and hosting web applications. The most common types of functionality include servers for shared network files, databases, proxy security, email, and server backups.
+
+Here are many types of servers that all perform different functions.
+
 
 **1. File servers**
 
