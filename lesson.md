@@ -85,6 +85,22 @@ Tower servers are a vertical, standalone enclosure and least dense with low main
 
 ---
 
-## Part 3 - Insert Summary
+## Part 3 - Server Virtualization
 
-Insert Instructions
+Server virtualization is the process of using software to divide physical hardware into separate unique virtual servers. Once divided, these independent virtual servers can be used for a multitude of tasks. Each virtual server will be able to host a different operating system without any compatibility issues. 
+
+### Types of Server Virtualization
+
+There are three main types of server virtualization: full-virtualization, para-virtualization, and OS-level virtualization.
+
+**Full-Virtualization**
+
+A hypervisor is a specialized type of software that is necessary for full server virtualization. There are many different hypervisors available, so make sure to compare your requirements with available features before finalizing a purchase. Hypervisors function by communicating with servers to monitor disk space and CPU usage. The software can then allocate resources as needed across multiple virtual server deployments. Computing power can even be shared across various operating systems with ease without sacrificing efficiency. Hypervisors do require a set amount of dedicated server resources to operate, limiting overall server power. When utilizing full virtualization, the separate server instances will not need to be aware of each other.
+
+**Para-Virtualization**
+
+The major difference between full and para-virtualization is that each OS on the server is aware of each other's presence. This allows for an entire network to work together to manage resources. The most significant benefit of para-virtualization is that the hypervisor doesn't require nearly as many resources to operate because different virtual servers are aware of each other and thus can more efficiently share physical resources.  
+
+**OS-Level Virtualization**
+
+The most basic form of server virtualization is OS-level virtualization. There are limitations when using this method, but it can be implemented and maintained with fewer resources than para- or full- virtualization. When using OS-level virtualization, there is no need for a hypervisor. The duty of managing resources and separating virtual machines is instead handled by the physical server’s operating system. The drawback to this solution is that each virtual machine will have to run the same operating system, because the OS is acting as a hypervisor. 
