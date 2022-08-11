@@ -2,11 +2,14 @@
 
 ### Preparation
 
-Write about any preparations needed for the lesson, such as tools, installations, prior-knowledge, etcs.
+None
 
-### Lesson Overview
 
-Write about how instructors can brief the students at the start of the lesson. It is good to guide students through what is going to be covered and the outcome. Setting expectations.
+### Self Study Checkin
+
+Q1: What type of server that you know?
+
+Q2: What type of server virtualization that you know?
 
 ---
 
@@ -105,16 +108,67 @@ Server virtualization is the process of using software to divide physical hardwa
 
 ### Types of Server Virtualization
 
-There are three main types of server virtualization: full-virtualization, para-virtualization, and OS-level virtualization.
+There are several types of server virtualization that network administrators rely on. Types of server virtualization examples include:
 
-**Full-Virtualization**
+- Full virtualization.
+- Para-virtualization.
+- Hardware-assisted virtualization.
+- OS-level virtualization.
+- Hypervisor virtualization.
 
-A hypervisor is a specialized type of software that is necessary for full server virtualization. There are many different hypervisors available, so make sure to compare your requirements with available features before finalizing a purchase. Hypervisors function by communicating with servers to monitor disk space and CPU usage. The software can then allocate resources as needed across multiple virtual server deployments. Computing power can even be shared across various operating systems with ease without sacrificing efficiency. Hypervisors do require a set amount of dedicated server resources to operate, limiting overall server power. When utilizing full virtualization, the separate server instances will not need to be aware of each other.
 
-**Para-Virtualization**
+**1. Full Virtualization**
 
-The major difference between full and para-virtualization is that each OS on the server is aware of each other's presence. This allows for an entire network to work together to manage resources. The most significant benefit of para-virtualization is that the hypervisor doesn't require nearly as many resources to operate because different virtual servers are aware of each other and thus can more efficiently share physical resources.  
+With full virtualization, a type of software called a hypervisor splits up the server’s resources between completely independent virtual servers that are isolated from each other. The hypervisor handles how resources are allocated between each virtual server. Since the virtual machines are separate, they all run on their own operating systems and can be configured as needed.
 
-**OS-Level Virtualization**
+**2. Para-Virtualization**
 
-The most basic form of server virtualization is OS-level virtualization. There are limitations when using this method, but it can be implemented and maintained with fewer resources than para- or full- virtualization. When using OS-level virtualization, there is no need for a hypervisor. The duty of managing resources and separating virtual machines is instead handled by the physical server’s operating system. The drawback to this solution is that each virtual machine will have to run the same operating system, because the OS is acting as a hypervisor. 
+Para-virtualization is somewhat related to full virtualization in that a hypervisor can access virtual machines through interfaces that are highly similar to the underlying hardware. Prior to installation inside a virtual machine, para-virtualization involves modifying a guest operating system to allow all other guest OS on the server to share resources and communicate with one another. Because all the VMs are working together, there are fewer demands on the hypervisor, meaning more of the virtualization server’s resources are dedicated to the virtual servers.
+
+
+**3. Hardware-Assisted Virtualization**
+
+With hardware-assisted virtualization, the division of resources needed to support multiple VMs is already built into the CPU of the host server. This allows virtual machines to communicate directly to the main server rather than entirely through the hypervisor. It’s a way to partially cut out the middleman, though a hypervisor is still needed. Since the path between the virtual machines and the physical server is more direct, the hypervisor uses a very significant amount of the server’s resources. This makes it seem like the virtual machines are running directly on the server. 
+
+**4. OS-Level Virtualization**
+
+With full virtualization, para-virtualization, and hardware-assisted virtualization, a hypervisor is needed to provide a platform on which virtual servers’ operating systems can run. With OS-level virtualization, however, the host server’s operating system is set up to allow for multiple instances of virtual machines called containers. The VMs operate in much the same way in OS-level virtualization as in hypervisor virtualization, but the computing overhead of the host operating system is a much higher percentage of the physical server’s resources than in a hypervisor-based system. However, OS-level virtualization can be simpler and less costly for a new user to implement.
+
+**5. Hypervisor-Based Virtualization**
+
+With hypervisor-based virtualization, software (the hypervisor) virtually emulates the hardware of the main server, basically acting like the physical machine on which operating systems can run. The hypervisor allocates resources of the physical server across the various guest virtual machines.
+
+Full virtualization and para-virtualization are types of hypervisor-based virtualization. Hardware-assisted virtualization is a type of hybrid virtualization that is hypervisor-based as well as hardware-based. 
+
+
+### Why is Server Virtualization Important?
+
+Virtualization can greatly benefit an organization. In addition to streamlining network needs, server virtualization benefits include:
+
+**Saving Space**
+
+If you’re running one task or application per server, they will soon take over your data center. By hosting multiple virtual servers on fewer physical servers, you can potentially save a lot of physical space.
+
+**Lowering Hardware Costs**
+
+Building physical servers can be costly. Virtual servers are much less expensive to deploy.
+
+**Improving Resource Efficiency**
+
+Many servers are more powerful than needed for the demands they are tasked with, meaning organizations technically pay for unused resources. Virtualization helps ensure that all resources are being efficiently used.
+
+**Lowering Energy Costs**
+
+Since virtualization allows you to efficiently use server resources rather than build unnecessary infrastructure, you have fewer servers using energy.
+
+**Decreasing Demand on IT**
+
+Maintaining a large network of physical servers can be taxing on an organization’s IT department. Virtualization can help free up IT worker resources to concentrate on other needs of the business.
+
+**Speeding Up Setup**
+
+Days or weeks can go by between purchasing hardware for physical servers and implementation. Setting up virtual servers can take minutes.
+
+**Simplifying Recovery**
+
+Backup systems on virtual machines (VMs) are quick and efficient. This means you can get up and running after a system failure fast with little to no data loss.
