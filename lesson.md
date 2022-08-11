@@ -10,9 +10,23 @@ Write about how instructors can brief the students at the start of the lesson. I
 
 ---
 
-## Part 1 - Insert Summary
+## Part 1 - Server?
 
-Insert Instructions
+The term ‘server’ has a double meaning in IT. It is used to describe a computer that makes resources available over a network, as well as the program that runs on this computer. So it’s necessary to have two different server definitions:
+
+
+**Definition Server (hardware):** a hardware-based server is a physical device connected to a computer network on which one or more software-based servers run alongside the operating system. An alternative term for a hardware-based server is host. In principle, any computer can be used as a host with server software.
+
+**Definition Server (software):** a software-based server is a program that offers a specialized service to be used by other programs (known as clients) locally or via a network. The service offered depends on the type of server software. The client-server model is the basis of communication. When it comes to exchanging data, service-specific communication protocols are used.
+
+
+### How do servers work?
+
+Server services operating via computer networks are realized thanks to the help of client server-models. This concept makes it possible to divide tasks among different computers and allow users access to them simultaneously. Every service provided via a network requires a server (software), which is permanently on standby. This is the only way to ensure that clients, like web browsers or e-mail programs, always have the opportunity to access the server and utilize its service when needed.
+
+
+![image](https://user-images.githubusercontent.com/106639884/184091869-f35d6b1b-5012-4bb3-83b1-b277d212aeb8.png)
+
 
 ---
 
