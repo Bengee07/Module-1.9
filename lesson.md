@@ -5,27 +5,27 @@
 None
 
 
-### Self Study Checkin
+### Self Study Check-in
 
-Q1: What type of server that you know?
+Q1: What types of server do you know?
 
-Q2: What type of server virtualization that you know?
+Q2: What types of server virtualization do you know?
 
 ---
 
 ## Part 1 - Server?
 
-The term ‘server’ has a double meaning in IT. It is used to describe a computer that makes resources available over a network, as well as the program that runs on this computer. So it’s necessary to have two different server definitions:
+The term ‘server’ has double meaning in IT. It is used to describe a computer that makes resources available over a network, as well as the program that runs on this computer. So it’s necessary to have two different server definitions:
 
 
-**Definition Server (hardware):** a hardware-based server is a physical device connected to a computer network on which one or more software-based servers run alongside the operating system. An alternative term for a hardware-based server is host. In principle, any computer can be used as a host with server software.
+**Server (Hardware):** a hardware-based server is a physical device connected to a computer network on which one or more software-based servers run alongside the operating system. An alternative term for a hardware-based server is host. In principle, any computer can be used as a host with server software.
 
-**Definition Server (software):** a software-based server is a program that offers a specialized service to be used by other programs (known as clients) locally or via a network. The service offered depends on the type of server software. The client-server model is the basis of communication. When it comes to exchanging data, service-specific communication protocols are used.
+**Server (Software):** a software-based server is a program that offers a specialized service to be used by other programs (known as clients) locally or via a network. The service offered depends on the type of server software. The client-server model is the basis of communication. When it comes to exchanging data, service-specific communication protocols are used.
 
 
 ### How do servers work?
 
-Server services operating via computer networks are realized thanks to the help of client server-models. This concept makes it possible to divide tasks among different computers and allow users access to them simultaneously. Every service provided via a network requires a server (software), which is permanently on standby. This is the only way to ensure that clients, like web browsers or e-mail programs, always have the opportunity to access the server and utilize its service when needed.
+Server services operating via computer networks are realized with the help of client-server models. This concept makes it possible to divide tasks among different computers and allow users access to them simultaneously. Every service provided via a network requires a server (software), which is permanently on standby. This is the only way to ensure that clients, like web browsers or e-mail programs, always have the opportunity to access the server and utilize its service when needed.
 
 
 ![image](https://user-images.githubusercontent.com/106639884/184091869-f35d6b1b-5012-4bb3-83b1-b277d212aeb8.png)
@@ -119,7 +119,7 @@ There are several types of server virtualization that network administrators rel
 
 **1. Full Virtualization**
 
-With full virtualization, a type of software called a hypervisor splits up the server’s resources between completely independent virtual servers that are isolated from each other. The hypervisor handles how resources are allocated between each virtual server. Since the virtual machines are separate, they all run on their own operating systems and can be configured as needed.
+With full virtualization, a type of software called a **hypervisor** splits up the server’s resources between completely independent virtual servers that are isolated from each other. The hypervisor handles how resources are allocated between each virtual server. Since the virtual machines are separate, they all run on their own operating systems and can be configured as needed.
 
 **2. Para-Virtualization**
 
