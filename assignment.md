@@ -8,6 +8,8 @@ Different companies have different applications and have different architectural
 3. An inventory management system for a chain of supermarkets
 4. A learning management system for a university
 5. A ticketing system for an international IT helpdesk
+6. A government portal for tax system
+7. A flight management system by a global airline
 
 ### Submission 
 
